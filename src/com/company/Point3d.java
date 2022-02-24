@@ -49,7 +49,7 @@ public class Point3d {
     public boolean compare(Point3d anotherPoint){
         if (this.xCoord == anotherPoint.getX()
                 &&this.yCoord == anotherPoint.getY()
-                &&this.zCoord == getZ()){
+                &&this.zCoord == anotherPoint.getZ()){
             return true;
         }
         return false;
