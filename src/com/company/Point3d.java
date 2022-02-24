@@ -1,9 +1,9 @@
 package com.company;
 
+
 import static java.lang.Math.sqrt;
-public class Point3d {
-    private double xCoord;
-    private double yCoord;
+public class Point3d extends Point2d{
+
     private double zCoord;
 
     public Point3d (double x, double y, double z){
@@ -16,24 +16,9 @@ public class Point3d {
         this (0.0, 0.0, 0.0);
     }
 
-    public double getX(){
-        return xCoord;
-    }
-
-    public double getY(){
-        return yCoord;
-    }
 
     public double getZ(){
         return zCoord;
-    }
-
-    public void setX(double dote){
-        xCoord = dote;
-    }
-
-    public void setY(double dote){
-        yCoord = dote;
     }
 
     public void setZ(double dote){
@@ -47,11 +32,8 @@ public class Point3d {
     }
 
     public boolean compare(Point3d anotherPoint){
-        if (this.xCoord == anotherPoint.getX()
-                &&this.yCoord == anotherPoint.getY()
-                &&this.zCoord == anotherPoint.getZ()){
-            return true;
-        }
-        return false;
+        return this.xCoord == anotherPoint.getX()
+                && this.yCoord == anotherPoint.getY()
+                && this.zCoord == anotherPoint.getZ();
     }
 }
